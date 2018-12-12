@@ -25,31 +25,51 @@
 
 <div class="main">
 
-    <div class="mw" style="width:1300px;">
 
-        <img class="full-img" src="assets/img/contact_05.jpg"/>
-        <img class="full-img" src="assets/img/contact_08.jpg"/>
+    <img class="full-img" src="assets/img/submitFormTop.jpg"/>
 
-        <div style="position: relative;">
-            <img class="full-img" src="assets/img/contact_11.jpg"/>
+    <div class="mw" style="width:1300px;position: relative;">
 
-            <div class="form-col">
-                <div><input type="text"></div>
+        <a href="###" class="here">Here</a>
 
-                <div><input type="text"></div>
 
-                <div><input type="text"></div>
+        <img class="full-img" src="assets/img/submitForm.jpg"/>
+
+        <div class="submit-form">
+
+            <div class="submit-form-row">
+
+                <input type="text"/>
+                <input type="text"/>
 
             </div>
 
-            <div class="message-col">
-                <textarea></textarea>
+            <div class="submit-form-row">
+
+                <input type="text"/>
+                <input type="number"/>
+
             </div>
 
+            <div class="submit-form-row">
 
-            <button class="send-btn" type="button">SEND</button>
+                <span class="upload">
+
+                <input readonly type="text"/>
+
+                <span class="upload-col">
+                <input type="file"/>
+                </span>
+
+                </span>
+
+            </div>
+
 
         </div>
+
+
+        <button type="button" class="send-btn submit-btn">SUBMIT</button>
 
 
     </div>
@@ -65,6 +85,21 @@
 </div>
 
 <script src="assets/lib/jquery.js"></script>
+
+<script>
+
+
+    $(".upload-col input[type=file]").change(function()
+    {
+
+        $(this).parent().prev().val($(this).val());
+
+    });
+
+
+
+
+</script>
 
 </body>
 </html>

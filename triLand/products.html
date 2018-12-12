@@ -30,7 +30,7 @@
         <div class="left-col">
 
         <div class="parent-list">
-            <div class="top"><span>OCCASION</span></div>
+            <div class="top"><span>OCCASION</span><img src="assets/img/jiantou.jpg"/></div>
             <div class="child-list">
                 <a href="###">Christmas</a>
                 <a href="###">Valentine's day</a>
@@ -42,7 +42,7 @@
         </div>
 
         <div class="parent-list">
-            <div class="top"><span>CATEGORY</span></div>
+            <div class="top"><span>CATEGORY</span><img src="assets/img/jiantou.jpg"/></div>
             <div class="child-list">
                 <a href="###">Greeting Cards</a>
                 <a href="###">Gift card holder</a>
@@ -106,6 +106,15 @@
 </div>
 
 <script src="assets/lib/jquery.js"></script>
+
+<script>
+
+    $(".product-col .left-col .top").click(function()
+    {
+        $(this).next().toggle();
+    });
+
+</script>
 
 </body>
 </html>
